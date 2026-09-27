@@ -20,8 +20,8 @@ Install the PostProject wheel, the Manager wheel, and this demo wheel from their
 GitHub releases, then install the pinned upstream linker:
 
 ```sh
-python -m pip install postproject-0.3.0a1-py3-none-any.whl \
-  postproject_openassetio_manager-0.1.0-py3-none-any.whl \
+python -m pip install postproject-0.4.0a1-py3-none-any.whl \
+  postproject_openassetio_manager-0.2.0-py3-none-any.whl \
   postproject_otio_demo-0.1.0-py3-none-any.whl
 python -m pip install \
   git+https://github.com/OpenAssetIO/otio-openassetio.git@ee762d7d24670f84c30baa6149123b6d252a9969
