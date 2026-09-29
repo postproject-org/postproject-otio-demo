@@ -6,7 +6,7 @@ dependencies = [
   "openassetio>=1.0.2,<2",
   "openassetio-mediacreation>=1.0.0a13,<2",
   "opentimelineio>=0.18.1,<0.19",
-  "postproject>=0.4.0a1,<0.5",
+  "postproject>=0.4.0a1,<0.6",
   "postproject-openassetio-manager>=0.2,<0.3",
 ]
 description = "OTIO-through-OpenAssetIO demonstration for PostProject"
@@ -26,4 +26,3 @@ package-dir = {"" = "src"}
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-
