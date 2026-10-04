@@ -14,6 +14,10 @@ postproject-otio-demo /tmp/postproject-otio --library /opt/postproject/lib/libpo
 The test also verifies that OTIO's rational duration remains `48@24` through
 the round trip.
 
+The development SDK creates host bindings from `RepresentationRef(id)`.
+The stored HTTPS reference remains compatible; use matching SDK and Manager
+builds when testing the development tree.
+
 ## Install released artifacts
 
 Install the PostProject wheel, the Manager wheel, and this demo wheel from their

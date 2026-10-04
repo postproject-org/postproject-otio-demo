@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 import opentimelineio as otio
-from postproject import Production
+from postproject import RepresentationRef, Production
 
 
 def build_timeline(entity_reference: str) -> otio.schema.Timeline:
@@ -54,7 +54,7 @@ def run(work_directory: Path, library_path: Path) -> dict[str, object]:
         with production.transaction() as transaction:
             asset_id = transaction.import_media(media, "Camera A")
         representation = production.representations[asset_id][0]
-        entity_reference = production.host_bindings[representation.id]
+        entity_reference = production.host_bindings[RepresentationRef(representation.id)]
 
     linked = resolve_timeline(
         build_timeline(entity_reference), production_path, library_path
