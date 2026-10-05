@@ -53,6 +53,7 @@ def run(work_directory: Path, library_path: Path) -> dict[str, object]:
     with Production.create(production_path, library_path=library_path) as production:
         with production.transaction() as transaction:
             asset_id = transaction.import_media(media, "Camera A")
+            transaction.commit()
         representation = production.representations[asset_id][0]
         entity_reference = production.host_bindings[RepresentationRef(representation.id)]
 
