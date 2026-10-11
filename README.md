@@ -20,7 +20,9 @@ builds when testing a source checkout.
 
 ## Install matching packages
 
-Use native and Python packages from the same PostProject 0.8 build.
+Use native and Python packages from the same PostProject 0.9 development build.
+These sources require the unreleased SDK; use matching installed review artifacts
+or build it from source.
 Published SDK archives are available from [GitHub releases](https://github.com/postproject-org/postproject/releases).
 From this demo checkout, with the current Manager checkout in
 `../postproject-openassetio-manager`, build the compatible wheels and install
@@ -28,9 +30,9 @@ the pinned upstream linker:
 
 ```sh
 python -m pip wheel --no-deps ../postproject-openassetio-manager . --wheel-dir dist
-python -m pip install postproject-0.8.0a1-py3-none-any.whl \
-  dist/postproject_openassetio_manager-0.5.0-py3-none-any.whl \
-  dist/postproject_otio_demo-0.3.0-py3-none-any.whl
+python -m pip install postproject-0.9.0a1-py3-none-any.whl \
+  dist/postproject_openassetio_manager-0.6.0-py3-none-any.whl \
+  dist/postproject_otio_demo-0.4.0-py3-none-any.whl
 python -m pip install \
   git+https://github.com/OpenAssetIO/otio-openassetio.git@ee762d7d24670f84c30baa6149123b6d252a9969
 ```
