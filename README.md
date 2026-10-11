@@ -18,19 +18,19 @@ The development SDK creates host bindings from `RepresentationRef(id)`.
 The stored HTTPS reference remains compatible; use matching SDK and Manager
 builds when testing the development tree.
 
-## Install with PostProject 0.7
+## Install matching candidate packages
 
-Download the native archive and Python wheel from the
-[PostProject 0.7 release](https://github.com/postproject-org/postproject/releases/tag/v0.7.0-alpha.1).
+Use native and Python packages from the same PostProject 0.8 candidate build.
+Published SDK archives remain available from [GitHub releases](https://github.com/postproject-org/postproject/releases).
 From this demo checkout, with the current Manager checkout in
 `../postproject-openassetio-manager`, build the compatible wheels and install
 the pinned upstream linker:
 
 ```sh
 python -m pip wheel --no-deps ../postproject-openassetio-manager . --wheel-dir dist
-python -m pip install postproject-0.7.0a1-py3-none-any.whl \
-  dist/postproject_openassetio_manager-0.4.0-py3-none-any.whl \
-  dist/postproject_otio_demo-0.2.0-py3-none-any.whl
+python -m pip install postproject-0.8.0a1-py3-none-any.whl \
+  dist/postproject_openassetio_manager-0.5.0-py3-none-any.whl \
+  dist/postproject_otio_demo-0.3.0-py3-none-any.whl
 python -m pip install \
   git+https://github.com/OpenAssetIO/otio-openassetio.git@ee762d7d24670f84c30baa6149123b6d252a9969
 ```
