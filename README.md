@@ -14,14 +14,14 @@ postproject-otio-demo /tmp/postproject-otio --library /opt/postproject/lib/libpo
 The test also verifies that OTIO's rational duration remains `48@24` through
 the round trip.
 
-The development SDK creates host bindings from `RepresentationRef(id)`.
+The SDK creates host bindings from `RepresentationRef(id)`.
 The stored HTTPS reference remains compatible; use matching SDK and Manager
-builds when testing the development tree.
+builds when testing a source checkout.
 
-## Install matching candidate packages
+## Install matching packages
 
-Use native and Python packages from the same PostProject 0.8 candidate build.
-Published SDK archives remain available from [GitHub releases](https://github.com/postproject-org/postproject/releases).
+Use native and Python packages from the same PostProject 0.8 build.
+Published SDK archives are available from [GitHub releases](https://github.com/postproject-org/postproject/releases).
 From this demo checkout, with the current Manager checkout in
 `../postproject-openassetio-manager`, build the compatible wheels and install
 the pinned upstream linker:
